@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([a-z-]{3,})$ index.php?path=$1 [QSA]
+RewriteRule ^([a-z-]{3,})/([0-9]+)$ index.php?path=$1&id=$2 [QSA]
+
+
+
+
+
